@@ -1,4 +1,4 @@
-# FastAPI AI Chatbot with Ollama Integration
+# FastAPI AI Chatbot with Ollama Integration (Gemma 2b, M,14MS Before RAG)
 
 ## Overview
 This project is a FastAPI-based chatbot that integrates AI models using Ollama. It processes user input through NLP before invoking an AI model, ensuring efficient responses. The chatbot supports various AI models, depending on your hardware capabilities, especially GPU performance.
@@ -13,8 +13,8 @@ This project is a FastAPI-based chatbot that integrates AI models using Ollama. 
 ### Setup Steps
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-repo/fastapi-ai-chat.git
-   cd fastapi-ai-chat
+   git clone https://github.com/your-repo/ai-avatar-2
+   cd ai-avatar-2
    ```
 
 2. **Create and Activate Virtual Environment (Optional)**
@@ -30,7 +30,13 @@ This project is a FastAPI-based chatbot that integrates AI models using Ollama. 
 
 4. **Run the Application**
    ```bash
-   uvicorn app:app --host 0.0.0.0 --port 5000
+   python app.py
+   ```
+
+
+4. **Run the Web on Xampp**
+   ```bash
+   https://localhost/step-2-aiavatar/static/
    ```
 
 ## Configuration
