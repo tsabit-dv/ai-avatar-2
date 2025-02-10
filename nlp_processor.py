@@ -9,8 +9,6 @@ NLP_RESPONSES = {
     "selamat malam": "selamat malam! Ada yang bisa saya bantu ?",
     "terima kasih": "Sama-sama! Senang bisa membantu anda 😊",
     "waktu sekarang": "Saat ini adalah waktu lokal Anda.",
-    "siapa": "Saya adalah Avatar AI dari PT Trikod, saya siap membantu anda kapan pun dimanapun",
-    "siapa kamu": "Saya adalah Avatar AI dari PT Trikod, saya siap membantu anda kapan pun dimanapun",
     "nama kamu": "Saya adalah Avatar AI dari PT Trikod, saya siap membantu anda kapan pun dimanapun",
     "cuaca": "Maaf, saya tidak bisa melihat cuaca saat ini, tetapi Anda bisa mengeceknya di Google 🌤️."
 }

@@ -19,7 +19,7 @@ app.add_middleware(
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-model = OllamaLLM(model="llama3.2:1b")
+model = OllamaLLM(model="gemma:2b")
 
 class ChatRequest(BaseModel):
     message: str
@@ -32,8 +32,11 @@ async def chat(request: ChatRequest):
     if nlp_response:
         return {"response": nlp_response, "source": "Avatar"}
 
-    ai_response = await asyncio.to_thread(model.invoke, input=user_message)
+    prompt = f"Jawab dengan singkat: {user_message}"
+    ai_response = await asyncio.to_thread(model.invoke, input=prompt)
+    
     return {"response": ai_response, "source": "Avatar"}
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=5000)
